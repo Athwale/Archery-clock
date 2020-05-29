@@ -82,12 +82,12 @@ $EndComp
 $Comp
 L Connector:Screw_Terminal_01x02 J5
 U 1 1 5EBB14C8
-P 5600 3550
-F 0 "J5" H 5680 3542 50  0000 L CNN
-F 1 "Siren" H 5680 3451 50  0000 L CNN
-F 2 "" H 5600 3550 50  0001 C CNN
-F 3 "~" H 5600 3550 50  0001 C CNN
-	1    5600 3550
+P 5950 2900
+F 0 "J5" H 6030 2892 50  0000 L CNN
+F 1 "Siren" H 6030 2801 50  0000 L CNN
+F 2 "" H 5950 2900 50  0001 C CNN
+F 3 "~" H 5950 2900 50  0001 C CNN
+	1    5950 2900
 	1    0    0    -1  
 $EndComp
 $Comp
@@ -115,13 +115,13 @@ $EndComp
 $Comp
 L Device:D D1
 U 1 1 5EC1AB93
-P 3200 1000
-F 0 "D1" H 3200 1216 50  0000 C CNN
-F 1 "1N4007" H 3200 1125 50  0000 C CNN
-F 2 "" H 3200 1000 50  0001 C CNN
-F 3 "~" H 3200 1000 50  0001 C CNN
-	1    3200 1000
-	0    -1   -1   0   
+P 4850 3550
+F 0 "D1" H 4850 3766 50  0000 C CNN
+F 1 "1N4007" H 4850 3675 50  0000 C CNN
+F 2 "" H 4850 3550 50  0001 C CNN
+F 3 "~" H 4850 3550 50  0001 C CNN
+	1    4850 3550
+	0    1    1    0   
 $EndComp
 Text Label 1400 2600 0    50   ~ 0
 12V+
@@ -205,12 +205,6 @@ Wire Wire Line
 Wire Wire Line
 	1900 2150 2400 2150
 Connection ~ 1900 2150
-Wire Wire Line
-	1750 2600 2550 2600
-Wire Wire Line
-	1750 1500 2750 1500
-Wire Wire Line
-	2750 1500 2750 2000
 Connection ~ 1750 1850
 Wire Wire Line
 	1750 1850 1750 1500
@@ -219,8 +213,6 @@ Wire Wire Line
 Wire Wire Line
 	2400 1850 2400 2150
 Connection ~ 2400 2150
-Wire Wire Line
-	2400 2150 2500 2150
 $Comp
 L power:PWR_FLAG #FLG0103
 U 1 1 5EC7C21E
@@ -235,12 +227,12 @@ $EndComp
 $Comp
 L Relay:FINDER-40.31 K0
 U 1 1 5ECA0675
-P 3850 1000
-F 0 "K0" H 4280 1046 50  0000 L CNN
-F 1 "RELRAS0515" H 4280 955 50  0000 L CNN
-F 2 "Relay_THT:Relay_SPDT_Finder_40.31" H 4990 960 50  0001 C CNN
-F 3 "http://gfinder.findernet.com/assets/Series/353/S40EN.pdf" H 3850 1000 50  0001 C CNN
-	1    3850 1000
+P 5450 3550
+F 0 "K0" H 5880 3596 50  0000 L CNN
+F 1 "RELRAS0515" H 5880 3505 50  0000 L CNN
+F 2 "Relay_THT:Relay_SPDT_Finder_40.31" H 6590 3510 50  0001 C CNN
+F 3 "http://gfinder.findernet.com/assets/Series/353/S40EN.pdf" H 5450 3550 50  0001 C CNN
+	1    5450 3550
 	1    0    0    -1  
 $EndComp
 Text Label 2150 3950 0    50   ~ 0
@@ -300,8 +292,6 @@ NoConn ~ 2150 3550
 NoConn ~ 2150 3450
 Text Label 2150 4150 0    50   ~ 0
 SIREN
-Wire Wire Line
-	2150 4150 2550 4150
 Wire Wire Line
 	1300 3150 3800 3150
 Wire Wire Line
@@ -400,4 +390,103 @@ Wire Wire Line
 	3800 4900 3750 4900
 Wire Wire Line
 	2150 4950 2550 4950
+$Comp
+L Device:R R2
+U 1 1 5ED47928
+P 4700 4350
+F 0 "R2" H 4770 4396 50  0000 L CNN
+F 1 "430R" H 4770 4305 50  0000 L CNN
+F 2 "" V 4630 4350 50  0001 C CNN
+F 3 "~" H 4700 4350 50  0001 C CNN
+	1    4700 4350
+	0    1    1    0   
+$EndComp
+$Comp
+L Transistor_BJT:BC548 Q0
+U 1 1 5ED48271
+P 4300 4150
+F 0 "Q0" H 4491 4196 50  0000 L CNN
+F 1 "BC548C" H 4491 4105 50  0000 L CNN
+F 2 "Package_TO_SOT_THT:TO-92_Inline" H 4500 4075 50  0001 L CIN
+F 3 "http://www.fairchildsemi.com/ds/BC/BC547.pdf" H 4300 4150 50  0001 L CNN
+	1    4300 4150
+	1    0    0    -1  
+$EndComp
+$Comp
+L Transistor_BJT:BD139 Q1
+U 1 1 5ED492AC
+P 5150 4350
+F 0 "Q1" H 5342 4396 50  0000 L CNN
+F 1 "BD139-16" H 5342 4305 50  0000 L CNN
+F 2 "Package_TO_SOT_THT:TO-126-3_Vertical" H 5350 4275 50  0001 L CIN
+F 3 "http://www.st.com/internet/com/TECHNICAL_RESOURCES/TECHNICAL_LITERATURE/DATASHEET/CD00001225.pdf" H 5150 4350 50  0001 L CNN
+	1    5150 4350
+	1    0    0    -1  
+$EndComp
+Wire Wire Line
+	2150 4150 2850 4150
+Wire Wire Line
+	3150 4150 4100 4150
+$Comp
+L Device:R R1
+U 1 1 5ED47212
+P 3000 4150
+F 0 "R1" H 3070 4196 50  0000 L CNN
+F 1 "100k" H 3070 4105 50  0000 L CNN
+F 2 "" V 2930 4150 50  0001 C CNN
+F 3 "~" H 3000 4150 50  0001 C CNN
+	1    3000 4150
+	0    1    1    0   
+$EndComp
+Wire Wire Line
+	4400 1500 4400 3950
+Wire Wire Line
+	1750 1500 4400 1500
+Wire Wire Line
+	4550 4350 4400 4350
+Wire Wire Line
+	4850 4350 4950 4350
+Wire Wire Line
+	1750 2600 5250 2600
+Wire Wire Line
+	4050 2150 4050 4800
+Wire Wire Line
+	4050 4800 5250 4800
+Wire Wire Line
+	5250 4800 5250 4550
+Wire Wire Line
+	2400 2150 4050 2150
+Wire Wire Line
+	5250 3850 5250 3950
+Wire Wire Line
+	5250 2600 5250 2900
+Wire Wire Line
+	5250 3950 4850 3950
+Wire Wire Line
+	4850 3950 4850 3700
+Connection ~ 5250 3950
+Wire Wire Line
+	5250 3950 5250 4150
+Wire Wire Line
+	5250 3150 4850 3150
+Wire Wire Line
+	4850 3150 4850 3400
+Connection ~ 5250 3150
+Wire Wire Line
+	5250 3150 5250 3250
+Wire Wire Line
+	5750 2900 5250 2900
+Connection ~ 5250 2900
+Wire Wire Line
+	5250 2900 5250 3150
+Wire Wire Line
+	5750 3250 5750 3000
+Wire Wire Line
+	5650 3850 5650 4800
+Wire Wire Line
+	5650 4800 5250 4800
+Connection ~ 5250 4800
+NoConn ~ 5550 3250
+NoConn ~ 2150 3850
+NoConn ~ 3750 4700
 $EndSCHEMATC
