@@ -1,4 +1,4 @@
-// This code switches LEDs connected to port B on/off at 500ms
+// This code decodes a 4 bit binary number into a 7 segment number or character a,b,c,d,-
 // Chip: AVR, EEPROM: 128B, SRAM: 128B, flash: 2kB, THT ATTINY2313-20PU DIL20
 
 #include <util/delay.h>
@@ -14,9 +14,6 @@ int main(void)
     
     while(1)
     {
-        PORTB = 0b00000000;     // All LEDs off
-        _delay_ms (500);        // Wait 500ms
-        PORTB = 0b11111111;	// All LEDs on
-        _delay_ms (500);
+        // TODO
     }
 }
