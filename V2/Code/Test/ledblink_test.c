@@ -5,6 +5,7 @@
 #include <avr/io.h>
 
 // Base frequency of the built in clock 1MHz
+#undef F_CPU
 #define F_CPU 1000000UL
 
 int main(void)
@@ -15,8 +16,8 @@ int main(void)
     while(1)
     {
         PORTB = 0b00000000;     // All LEDs off
-        _delay_ms (500);        // Wait 500ms
-        PORTB = 0b11111111;	// All LEDs on
-        _delay_ms (500);
+        _delay_ms(500);         // Wait 500ms
+        PORTB = 0b11111111;     // All LEDs on
+        _delay_ms(500);
     }
 }
