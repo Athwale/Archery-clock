@@ -4,7 +4,9 @@ Burner SW: AVRDUDE
 OS: Fedora  
     
 ## Install:
+```
 sudo yum -y install avrdude avr-gcc avr-libc
+```
 
 ### Simple LED test:
 This compiles and creates a hex file for a small LED blinking test program which blinks all LEDs connected to port B at 500ms intervals using the default internal 1MHz rc oscillator.

@@ -4,15 +4,19 @@ Burner SW: AVRDUDE
 OS: Fedora  
     
     
-#### Install:
+## Install:
+```
 sudo yum -y install avrdude avr-gcc avr-libc
+```
 
-#### Compiling .c code:
+### Decoder firmware:
 This compiles and flashes the 7segment decoder program using the internal 1MHz rc oscillator.
+```
 avr-gcc -Wall -g -Os -mmcu=attiny2313 -o decoder.bin decoder.c
-
-#### Create .hex file 
 avr-objcopy -j .text -j .data -O ihex decoder.bin decoder.hex
+```
 
-#### Burn hex into microcontroller
+#### Flash hex into microcontroller
+```
 avrdude -c usbasp -p attiny2313 -U flash:w:decoder.hex
+```
