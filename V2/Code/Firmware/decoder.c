@@ -3,7 +3,7 @@
 
 // Pin configuration
 // Outputs port B:
-// DDRB = 0b | 1  | 1  | 1  | 1  | 1  | 1  | 1  | 0
+// DDRB = 0b | 1  | 1  | 1  | 1  | 1  | 1  | 1  | 1
 // Segment:  | A  | B  | C  | D  | E  | F  | G  | Unused
 // Pin num:  | 19 | 18 | 17 | 16 | 15 | 14 | 13 | 12
 // Port num: | P7 | P6 | P5 | P4 | P3 | P2 | P1 | P0
