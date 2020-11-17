@@ -951,8 +951,8 @@ Text Notes 8150 1350 0    50   ~ 0
 12V cca 90mA
 Text Notes 8150 1250 0    50   ~ 0
 12V cca 700mA
-Text Notes 5200 2550 0    50   ~ 0
-4.5V 3.1mA
+Text Notes 5250 2800 0    50   ~ 0
+4.5V 3.1mA\nMax per pin: 20mA\nMax over all pins: 60mA
 Text Notes 2400 2650 0    50   ~ 0
 3.3V 800uA
 Text Notes 3450 1350 0    50   ~ 0
