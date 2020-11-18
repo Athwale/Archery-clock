@@ -27,23 +27,12 @@ $EndComp
 $Comp
 L Connector_Generic:Conn_02x03_Counter_Clockwise J2
 U 1 1 5EA23348
-P 3950 4300
-F 0 "J2" H 4000 4617 50  0000 C CNN
-F 1 "Control_seg:2" H 4000 4526 50  0000 C CNN
-F 2 "Connector_PinHeader_2.54mm:PinHeader_2x03_P2.54mm_Horizontal" H 3950 4300 50  0001 C CNN
-F 3 "~" H 3950 4300 50  0001 C CNN
-	1    3950 4300
-	0    -1   -1   0   
-$EndComp
-$Comp
-L Connector_Generic:Conn_02x03_Counter_Clockwise J3
-U 1 1 5EA246A5
-P 3450 5050
-F 0 "J3" H 3500 5367 50  0000 C CNN
-F 1 "Control_seg:3" H 3500 5276 50  0000 C CNN
-F 2 "Connector_PinHeader_2.54mm:PinHeader_2x03_P2.54mm_Horizontal" H 3450 5050 50  0001 C CNN
-F 3 "~" H 3450 5050 50  0001 C CNN
-	1    3450 5050
+P 3850 4300
+F 0 "J2" H 3900 4617 50  0000 C CNN
+F 1 "Control_seg:2" H 3900 4526 50  0000 C CNN
+F 2 "Connector_PinHeader_2.54mm:PinHeader_2x03_P2.54mm_Horizontal" H 3850 4300 50  0001 C CNN
+F 3 "~" H 3850 4300 50  0001 C CNN
+	1    3850 4300
 	0    -1   -1   0   
 $EndComp
 $Comp
@@ -84,7 +73,7 @@ L Device:R R0
 U 1 1 5EC190C2
 P 4450 2100
 F 0 "R0" H 4520 2146 50  0000 L CNN
-F 1 "150R" H 4520 2055 50  0000 L CNN
+F 1 "33k" H 4520 2055 50  0000 L CNN
 F 2 "Resistor_THT:R_Axial_DIN0207_L6.3mm_D2.5mm_P10.16mm_Horizontal" V 4380 2100 50  0001 C CNN
 F 3 "~" H 4450 2100 50  0001 C CNN
 	1    4450 2100
@@ -268,7 +257,7 @@ U 1 1 5ED48271
 P 6850 4400
 F 0 "Q0" H 7041 4446 50  0000 L CNN
 F 1 "BC548C" H 7041 4355 50  0000 L CNN
-F 2 "Package_TO_SOT_THT:TO-92_Inline" H 7050 4325 50  0001 L CIN
+F 2 "Package_TO_SOT_THT:TO-92_Inline_Wide" H 7050 4325 50  0001 L CIN
 F 3 "http://www.fairchildsemi.com/ds/BC/BC547.pdf" H 6850 4400 50  0001 L CNN
 	1    6850 4400
 	1    0    0    -1  
@@ -363,7 +352,7 @@ L Device:R R3
 U 1 1 5EDC8D2F
 P 7250 3400
 F 0 "R3" H 7320 3446 50  0000 L CNN
-F 1 "510R" H 7320 3355 50  0000 L CNN
+F 1 "33k" H 7320 3355 50  0000 L CNN
 F 2 "Resistor_THT:R_Axial_DIN0207_L6.3mm_D2.5mm_P10.16mm_Horizontal" V 7180 3400 50  0001 C CNN
 F 3 "~" H 7250 3400 50  0001 C CNN
 	1    7250 3400
@@ -423,71 +412,17 @@ seg:3_bit:c_gpio:19
 Text Label 5600 5500 2    50   ~ 0
 seg:3_bit:d_gpio:26
 Wire Wire Line
-	5600 4000 4700 4000
-Wire Wire Line
-	3850 5100 5600 5100
-Wire Wire Line
-	4700 4000 4700 3450
-Wire Wire Line
-	4700 3450 4550 3450
-Wire Wire Line
-	4350 4400 4350 3950
-Wire Wire Line
-	4350 4400 5600 4400
-Wire Wire Line
-	4450 4300 4450 3950
-Wire Wire Line
-	4450 4300 5600 4300
-Wire Wire Line
-	4550 4200 4550 3950
-Wire Wire Line
-	4550 4200 5600 4200
-Wire Wire Line
-	4200 4600 4200 4000
-Wire Wire Line
-	4200 4000 4050 4000
-Wire Wire Line
-	4200 4600 5600 4600
-Wire Wire Line
-	3850 5100 3850 4500
-Wire Wire Line
-	3950 4800 3950 4500
-Wire Wire Line
-	3950 4800 5600 4800
-Wire Wire Line
-	4050 4700 4050 4500
+	4750 4200 5600 4200
 Wire Wire Line
 	4050 4700 5600 4700
 Wire Wire Line
-	3700 5200 3700 4750
-Wire Wire Line
-	3700 4750 3550 4750
-Wire Wire Line
-	3700 5200 5600 5200
-Wire Wire Line
-	3550 5300 3550 5250
-Wire Wire Line
-	3550 5300 5600 5300
-Wire Wire Line
-	3450 5400 3450 5250
-Wire Wire Line
-	3450 5400 5600 5400
-Wire Wire Line
-	3350 5500 3350 5250
-Wire Wire Line
-	3350 5500 5600 5500
-NoConn ~ 4350 3450
-NoConn ~ 4450 3450
-NoConn ~ 3850 4000
-NoConn ~ 3950 4000
-NoConn ~ 3350 4750
-NoConn ~ 3450 4750
+	3450 5300 5600 5300
 $Comp
 L Device:R R4
 U 1 1 5FCA692B
 P 5450 2550
 F 0 "R4" H 5520 2596 50  0000 L CNN
-F 1 "510R" H 5520 2505 50  0000 L CNN
+F 1 "33k" H 5520 2505 50  0000 L CNN
 F 2 "Resistor_THT:R_Axial_DIN0207_L6.3mm_D2.5mm_P10.16mm_Horizontal" V 5380 2550 50  0001 C CNN
 F 3 "~" H 5450 2550 50  0001 C CNN
 	1    5450 2550
@@ -520,4 +455,87 @@ Wire Wire Line
 Connection ~ 6300 2400
 Wire Wire Line
 	6300 2400 6600 2400
+Wire Wire Line
+	4850 4000 5600 4000
+Wire Wire Line
+	4750 4200 4750 3400
+Wire Wire Line
+	4750 3400 4450 3400
+Wire Wire Line
+	4450 3400 4450 3450
+Wire Wire Line
+	4550 4300 5600 4300
+Wire Wire Line
+	4150 4600 5600 4600
+Wire Wire Line
+	4050 4700 4050 3950
+Wire Wire Line
+	4050 3950 3850 3950
+Wire Wire Line
+	3850 3950 3850 4000
+Wire Wire Line
+	3950 4800 5600 4800
+Wire Wire Line
+	3550 5200 5600 5200
+Wire Wire Line
+	3450 5300 3450 4500
+Wire Wire Line
+	3450 4500 3250 4500
+Wire Wire Line
+	3350 5400 5600 5400
+NoConn ~ 3950 4000
+NoConn ~ 4550 3450
+Wire Wire Line
+	4550 4300 4550 3950
+Wire Wire Line
+	4350 4400 4350 3950
+Wire Wire Line
+	4350 4400 5600 4400
+Wire Wire Line
+	4850 4000 4850 3350
+Wire Wire Line
+	4850 3350 4350 3350
+Wire Wire Line
+	4350 3350 4350 3450
+NoConn ~ 4450 3950
+Wire Wire Line
+	3950 4800 3950 4500
+Wire Wire Line
+	4150 4600 4150 3900
+Wire Wire Line
+	4150 3900 3750 3900
+Wire Wire Line
+	3750 3900 3750 4000
+Wire Wire Line
+	3750 5100 5600 5100
+Wire Wire Line
+	3750 5100 3750 4500
+Wire Wire Line
+	3250 4500 3250 4550
+NoConn ~ 3350 4550
+$Comp
+L Connector_Generic:Conn_02x03_Counter_Clockwise J3
+U 1 1 5EA246A5
+P 3250 4850
+F 0 "J3" H 3300 5167 50  0000 C CNN
+F 1 "Control_seg:3" H 3300 5076 50  0000 C CNN
+F 2 "Connector_PinHeader_2.54mm:PinHeader_2x03_P2.54mm_Horizontal" H 3250 4850 50  0001 C CNN
+F 3 "~" H 3250 4850 50  0001 C CNN
+	1    3250 4850
+	0    -1   -1   0   
+$EndComp
+Wire Wire Line
+	3350 5400 3350 5050
+Wire Wire Line
+	3150 5500 3150 5050
+Wire Wire Line
+	3150 5500 5600 5500
+Wire Wire Line
+	3550 5200 3550 4450
+Wire Wire Line
+	3550 4450 3150 4450
+Wire Wire Line
+	3150 4450 3150 4550
+NoConn ~ 3850 4500
+NoConn ~ 3250 5050
 $EndSCHEMATC
