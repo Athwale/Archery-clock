@@ -284,19 +284,19 @@ Wire Wire Line
 	9800 4350 8150 4350
 Text Label 10500 1250 0    50   ~ 0
 +12V
-Text Label 10500 1350 0    50   ~ 0
-SEG_G
-Text Label 10500 1550 0    50   ~ 0
-SEG_F
-Text Label 10000 1450 2    50   ~ 0
-SEG_E
-Text Label 10000 1250 2    50   ~ 0
-SEG_D
-Text Label 10000 1350 2    50   ~ 0
-SEG_C
-Text Label 10000 1550 2    50   ~ 0
-SEG_B
 Text Label 10500 1450 0    50   ~ 0
+SEG_G
+Text Label 10000 1550 2    50   ~ 0
+SEG_F
+Text Label 10000 1350 2    50   ~ 0
+SEG_E
+Text Label 10000 1150 2    50   ~ 0
+SEG_D
+Text Label 10000 1250 2    50   ~ 0
+SEG_C
+Text Label 10000 1450 2    50   ~ 0
+SEG_B
+Text Label 10500 1550 0    50   ~ 0
 SEG_A
 $Comp
 L Device:R R10
@@ -345,12 +345,12 @@ F 3 "~" H 700 1550 50  0001 C CNN
 	-1   0    0    1   
 $EndComp
 $Comp
-L Connector_Generic:Conn_02x04_Counter_Clockwise J2
+L Connector_Generic:Conn_02x05_Counter_Clockwise J2
 U 1 1 5EACC56A
 P 10200 1350
-F 0 "J2" H 10250 1667 50  0000 C CNN
-F 1 "Flat_7seg_F" H 10250 1576 50  0000 C CNN
-F 2 "Connector_PinHeader_2.54mm:PinHeader_2x04_P2.54mm_Horizontal" H 10200 1350 50  0001 C CNN
+F 0 "J2" H 10250 1750 50  0000 C CNN
+F 1 "Flat_7seg_F" H 10250 1650 50  0000 C CNN
+F 2 "Connector_PinHeader_2.54mm:PinHeader_2x05_P2.54mm_Horizontal" H 10200 1350 50  0001 C CNN
 F 3 "~" H 10200 1350 50  0001 C CNN
 	1    10200 1350
 	1    0    0    -1  
@@ -663,7 +663,7 @@ F 3 "~" H 6150 1600 50  0001 C CNN
 	1    0    0    -1  
 $EndComp
 Wire Wire Line
-	4500 1250 4500 1000
+	4500 1250 4500 900 
 $Comp
 L Device:R R18
 U 1 1 5FDCFB8C
@@ -825,7 +825,7 @@ Wire Wire Line
 	7050 2550 7100 2550
 Text Notes 8150 1350 0    50   ~ 0
 12V cca 90mA
-Text Notes 8150 1000 0    50   ~ 0
+Text Notes 8150 900  0    50   ~ 0
 12V cca 700mA
 Text Notes 5250 2800 0    50   ~ 0
 4.5V 3.1mA\nMax per pin: 20mA\nMax over all pins: 60mA
@@ -876,53 +876,15 @@ F 3 "~" H 5250 1600 50  0001 C CNN
 	1    0    0    -1  
 $EndComp
 Wire Wire Line
-	10750 1000 10750 1250
-Wire Wire Line
 	10750 1250 10500 1250
 Wire Wire Line
-	4500 1000 10750 1000
+	4500 900  10750 900 
 Wire Wire Line
 	8150 1350 8900 1350
 Wire Wire Line
-	8900 1350 8900 900 
+	8900 1350 8900 800 
 Wire Wire Line
-	8900 900  10800 900 
-Wire Wire Line
-	10800 900  10800 1350
-Wire Wire Line
-	10800 1350 10500 1350
-Wire Wire Line
-	8150 1850 9000 1850
-Wire Wire Line
-	9000 1850 9000 800 
-Wire Wire Line
-	9000 800  10850 800 
-Wire Wire Line
-	10850 800  10850 1550
-Wire Wire Line
-	10850 1550 10500 1550
-Wire Wire Line
-	9400 1450 10000 1450
-Wire Wire Line
-	9400 1450 9400 2350
-Wire Wire Line
-	9500 1250 10000 1250
-Wire Wire Line
-	9500 1250 9500 2850
-Wire Wire Line
-	9600 1350 10000 1350
-Wire Wire Line
-	9600 1350 9600 3350
-Wire Wire Line
-	9700 1550 10000 1550
-Wire Wire Line
-	9700 1550 9700 3850
-Wire Wire Line
-	9800 1700 10950 1700
-Wire Wire Line
-	10950 1700 10950 1450
-Wire Wire Line
-	10950 1450 10500 1450
+	8900 800  10850 800 
 Wire Wire Line
 	9800 1700 9800 4350
 Wire Wire Line
@@ -978,4 +940,48 @@ Wire Wire Line
 Wire Wire Line
 	3600 3000 3600 2850
 Connection ~ 3100 2850
+Wire Wire Line
+	10750 900  10750 1150
+Wire Wire Line
+	9500 1150 10000 1150
+Wire Wire Line
+	9500 1150 9500 2850
+Wire Wire Line
+	9600 1250 10000 1250
+Wire Wire Line
+	9600 1250 9600 3350
+Wire Wire Line
+	9400 1350 10000 1350
+Wire Wire Line
+	9400 1350 9400 2350
+Wire Wire Line
+	9700 1450 10000 1450
+Wire Wire Line
+	9700 1450 9700 3850
+Wire Wire Line
+	10500 1150 10750 1150
+Connection ~ 10750 1150
+Wire Wire Line
+	10750 1150 10750 1250
+Wire Wire Line
+	9300 1850 9300 1550
+Wire Wire Line
+	9300 1550 10000 1550
+Wire Wire Line
+	8150 1850 9300 1850
+Wire Wire Line
+	9800 1700 10750 1700
+Wire Wire Line
+	10750 1700 10750 1550
+Wire Wire Line
+	10750 1550 10500 1550
+Wire Wire Line
+	10850 1450 10500 1450
+Wire Wire Line
+	10850 800  10850 1450
+Wire Wire Line
+	10500 1350 10750 1350
+Wire Wire Line
+	10750 1350 10750 1250
+Connection ~ 10750 1250
 $EndSCHEMATC
