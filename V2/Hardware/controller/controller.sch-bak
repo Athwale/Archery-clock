@@ -884,7 +884,7 @@ Wire Wire Line
 Wire Wire Line
 	8900 1350 8900 800 
 Wire Wire Line
-	8900 800  10800 800 
+	8900 800  10850 800 
 Wire Wire Line
 	9800 1700 9800 4350
 Wire Wire Line
@@ -976,9 +976,9 @@ Wire Wire Line
 Wire Wire Line
 	10750 1550 10500 1550
 Wire Wire Line
-	10800 1450 10500 1450
+	10850 1450 10500 1450
 Wire Wire Line
-	10800 800  10800 1450
+	10850 800  10850 1450
 Wire Wire Line
 	10500 1350 10750 1350
 Wire Wire Line
