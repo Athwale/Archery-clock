@@ -1,8 +1,8 @@
 (export (version D)
   (design
     (source /home/omejzlik/Kicad/Archery-clock/V2/Hardware/splitter/splitter.sch)
-    (date "Wed 18 Nov 2020 10:22:22 PM CET")
-    (tool "Eeschema 5.1.7")
+    (date "Mon 23 Nov 2020 08:27:12 PM CET")
+    (tool "Eeschema 5.1.8")
     (sheet (number 1) (name /) (tstamps /)
       (title_block
         (title)
@@ -73,7 +73,7 @@
       (tstamp 5EC1AB93))
     (comp (ref K0)
       (value RELRAS0515)
-      (footprint Relay_THT:Relay_SPDT_Finder_40.31)
+      (footprint Relay_THT:Relay_SPDT_Finder_36.11)
       (datasheet http://gfinder.findernet.com/assets/Series/353/S40EN.pdf)
       (libsource (lib Relay) (part FINDER-40.31) (description "FINDER 40.31, Single Pole Relay, 3.5mm Pitch, 10A"))
       (sheetpath (names /) (tstamps /))
@@ -100,7 +100,7 @@
       (sheetpath (names /) (tstamps /))
       (tstamp 5ED492AC))
     (comp (ref R1)
-      (value 100k)
+      (value 33k)
       (footprint Resistor_THT:R_Axial_DIN0207_L6.3mm_D2.5mm_P10.16mm_Horizontal)
       (datasheet ~)
       (libsource (lib Device) (part R) (description Resistor))
