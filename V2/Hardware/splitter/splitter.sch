@@ -376,7 +376,7 @@ U 1 1 5EA19BA2
 P 5800 4600
 F 0 "J0" H 5850 5717 50  0000 C CNN
 F 1 "Rpi_40Pin_F" H 5850 5626 50  0000 C CNN
-F 2 "Connector_PinHeader_2.54mm:PinHeader_2x20_P2.54mm_Vertical" H 5800 4600 50  0001 C CNN
+F 2 "Connector_IDC:IDC-Header_2x20_P2.54mm_Vertical" H 5800 4600 50  0001 C CNN
 F 3 "~" H 5800 4600 50  0001 C CNN
 	1    5800 4600
 	1    0    0    -1  

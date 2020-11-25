@@ -208,7 +208,7 @@ U 1 1 5ECA0675
 P 8000 3800
 F 0 "K0" H 8430 3846 50  0000 L CNN
 F 1 "RELRAS0515" H 8430 3755 50  0000 L CNN
-F 2 "Relay_THT:Relay_SPDT_Finder_40.31" H 9140 3760 50  0001 C CNN
+F 2 "Relay_THT:Relay_SPDT_Finder_36.11" H 9140 3760 50  0001 C CNN
 F 3 "http://gfinder.findernet.com/assets/Series/353/S40EN.pdf" H 8000 3800 50  0001 C CNN
 	1    8000 3800
 	1    0    0    -1  
