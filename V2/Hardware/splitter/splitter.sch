@@ -60,12 +60,12 @@ $EndComp
 $Comp
 L Connector:Screw_Terminal_01x02 J5
 U 1 1 5EBB14C8
-P 8500 3150
-F 0 "J5" H 8580 3142 50  0000 L CNN
-F 1 "Siren" H 8580 3051 50  0000 L CNN
-F 2 "TerminalBlock:TerminalBlock_bornier-2_P5.08mm" H 8500 3150 50  0001 C CNN
-F 3 "~" H 8500 3150 50  0001 C CNN
-	1    8500 3150
+P 9150 3150
+F 0 "J5" H 9230 3142 50  0000 L CNN
+F 1 "Siren" H 9230 3051 50  0000 L CNN
+F 2 "TerminalBlock:TerminalBlock_bornier-2_P5.08mm" H 9150 3150 50  0001 C CNN
+F 3 "~" H 9150 3150 50  0001 C CNN
+	1    9150 3150
 	1    0    0    -1  
 $EndComp
 $Comp
@@ -252,17 +252,6 @@ F 3 "~" H 7250 4600 50  0001 C CNN
 	0    1    1    0   
 $EndComp
 $Comp
-L Transistor_BJT:BC548 Q0
-U 1 1 5ED48271
-P 6850 4400
-F 0 "Q0" H 7041 4446 50  0000 L CNN
-F 1 "BC548C" H 7041 4355 50  0000 L CNN
-F 2 "Package_TO_SOT_THT:TO-92_Inline_Wide" H 7050 4325 50  0001 L CIN
-F 3 "http://www.fairchildsemi.com/ds/BC/BC547.pdf" H 6850 4400 50  0001 L CNN
-	1    6850 4400
-	1    0    0    -1  
-$EndComp
-$Comp
 L Transistor_BJT:BD139 Q1
 U 1 1 5ED492AC
 P 7700 4600
@@ -274,40 +263,19 @@ F 3 "http://www.st.com/internet/com/TECHNICAL_RESOURCES/TECHNICAL_LITERATURE/DAT
 	1    0    0    -1  
 $EndComp
 Wire Wire Line
-	6550 4400 6650 4400
-$Comp
-L Device:R R1
-U 1 1 5ED47212
-P 6400 4400
-F 0 "R1" H 6470 4446 50  0000 L CNN
-F 1 "33k" H 6470 4355 50  0000 L CNN
-F 2 "Resistor_THT:R_Axial_DIN0207_L6.3mm_D2.5mm_P10.16mm_Horizontal" V 6330 4400 50  0001 C CNN
-F 3 "~" H 6400 4400 50  0001 C CNN
-	1    6400 4400
-	0    1    1    0   
-$EndComp
-Wire Wire Line
-	6950 1750 6950 4200
-Wire Wire Line
-	4300 1750 6950 1750
-Wire Wire Line
-	7100 4600 6950 4600
-Wire Wire Line
 	7400 4600 7500 4600
 Wire Wire Line
 	4300 2850 5200 2850
 Wire Wire Line
-	6600 2400 6600 5050
+	6850 2400 6850 5050
 Wire Wire Line
-	6600 5050 7800 5050
+	6850 5050 7800 5050
 Wire Wire Line
 	7800 5050 7800 4800
 Wire Wire Line
 	4950 2400 6300 2400
 Wire Wire Line
 	7800 4100 7800 4200
-Wire Wire Line
-	7800 2850 7800 3150
 Wire Wire Line
 	7800 4200 7400 4200
 Wire Wire Line
@@ -316,19 +284,11 @@ Connection ~ 7800 4200
 Wire Wire Line
 	7800 4200 7800 4400
 Wire Wire Line
-	7800 3400 7400 3400
+	7800 3400 7600 3400
 Wire Wire Line
 	7400 3400 7400 3650
-Connection ~ 7800 3400
 Wire Wire Line
 	7800 3400 7800 3500
-Wire Wire Line
-	8300 3150 7800 3150
-Connection ~ 7800 3150
-Wire Wire Line
-	7800 3150 7800 3400
-Wire Wire Line
-	8300 3500 8300 3250
 Wire Wire Line
 	8200 4100 8200 5050
 Wire Wire Line
@@ -339,36 +299,27 @@ NoConn ~ 6100 4100
 $Comp
 L Device:LED D2
 U 1 1 5EDC36BC
-P 7250 3950
-F 0 "D2" H 7243 4166 50  0000 C CNN
-F 1 "LED_2V_20mA" H 7243 4075 50  0000 C CNN
-F 2 "LED_THT:LED_D5.0mm" H 7250 3950 50  0001 C CNN
-F 3 "~" H 7250 3950 50  0001 C CNN
-	1    7250 3950
+P 8600 3200
+F 0 "D2" H 8593 3416 50  0000 C CNN
+F 1 "LED_2V_20mA" H 8593 3325 50  0000 C CNN
+F 2 "LED_THT:LED_D5.0mm" H 8600 3200 50  0001 C CNN
+F 3 "~" H 8600 3200 50  0001 C CNN
+	1    8600 3200
 	0    -1   -1   0   
 $EndComp
 $Comp
 L Device:R R3
 U 1 1 5EDC8D2F
-P 7250 3400
-F 0 "R3" H 7320 3446 50  0000 L CNN
-F 1 "33k" H 7320 3355 50  0000 L CNN
-F 2 "Resistor_THT:R_Axial_DIN0207_L6.3mm_D2.5mm_P10.16mm_Horizontal" V 7180 3400 50  0001 C CNN
-F 3 "~" H 7250 3400 50  0001 C CNN
-	1    7250 3400
-	-1   0    0    1   
+P 8250 3050
+F 0 "R3" H 8320 3096 50  0000 L CNN
+F 1 "33k" H 8320 3005 50  0000 L CNN
+F 2 "Resistor_THT:R_Axial_DIN0207_L6.3mm_D2.5mm_P10.16mm_Horizontal" V 8180 3050 50  0001 C CNN
+F 3 "~" H 8250 3050 50  0001 C CNN
+	1    8250 3050
+	0    -1   -1   0   
 $EndComp
 Wire Wire Line
-	7250 3800 7250 3550
-Wire Wire Line
-	7250 3250 7250 3150
-Wire Wire Line
-	7250 3150 7800 3150
-Wire Wire Line
-	7250 4100 7250 4200
-Wire Wire Line
-	7250 4200 7400 4200
-Connection ~ 7400 4200
+	9200 4450 9200 4400
 NoConn ~ 6100 4200
 $Comp
 L Connector_Generic:Conn_02x20_Odd_Even J0
@@ -390,9 +341,7 @@ NoConn ~ 5600 5600
 Wire Wire Line
 	6100 5600 6200 5600
 Wire Wire Line
-	6200 5600 6200 4400
-Wire Wire Line
-	6200 4400 6250 4400
+	6200 5600 6200 4600
 Text Label 6200 5600 0    50   ~ 0
 SIREN_gpio:21
 Text Label 5600 4600 2    50   ~ 0
@@ -445,8 +394,6 @@ Wire Wire Line
 	5200 2550 5300 2550
 Connection ~ 5200 2850
 Wire Wire Line
-	5200 2850 7800 2850
-Wire Wire Line
 	5600 2550 5750 2550
 Wire Wire Line
 	6050 2550 6300 2550
@@ -454,7 +401,7 @@ Wire Wire Line
 	6300 2550 6300 2400
 Connection ~ 6300 2400
 Wire Wire Line
-	6300 2400 6600 2400
+	6300 2400 6850 2400
 Wire Wire Line
 	4850 4000 5600 4000
 Wire Wire Line
@@ -538,4 +485,37 @@ Wire Wire Line
 	3150 4450 3150 4550
 NoConn ~ 3850 4500
 NoConn ~ 3250 5050
+Wire Wire Line
+	6200 4600 7100 4600
+Wire Wire Line
+	7600 3400 7600 1750
+Wire Wire Line
+	4300 1750 7600 1750
+Connection ~ 7600 3400
+Wire Wire Line
+	7600 3400 7400 3400
+Wire Wire Line
+	8950 2850 8950 3150
+Wire Wire Line
+	5200 2850 8000 2850
+Wire Wire Line
+	8300 3500 8600 3500
+Wire Wire Line
+	8950 3500 8950 3250
+Wire Wire Line
+	8600 3050 8400 3050
+Wire Wire Line
+	8100 3050 8000 3050
+Wire Wire Line
+	8000 3050 8000 2850
+Connection ~ 8000 2850
+Wire Wire Line
+	8000 2850 8950 2850
+Wire Wire Line
+	8600 3350 8600 3500
+Connection ~ 8600 3500
+Wire Wire Line
+	8600 3500 8950 3500
+Text Notes 6200 4600 0    50   ~ 0
+3.3V 3mA
 $EndSCHEMATC
