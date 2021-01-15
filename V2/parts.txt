@@ -1,27 +1,34 @@
-LED 2V 20mA 600mcd - 42x
+LED 2V 20mA 600mcd 5mm - 42x
 MOLEX HDD power connector - 4x
 Pin header female 2x5 2.54mm - 6x
 Pin header female 2x3 2.54mm - 6x
 Pin header male 2x5 2.54mm - 6x
 Pin header male 2x3 2.54mm - 6x
+Pin header male 1x42 2.54mm - 1x
+Pin header female 1x42 2.54mm - 1x
 Flat 3M 28awg 16 line cable - 3m
-
-ADD board
-ADD foil, chemistry
-
-Pin header 2x20 2.54mm - 1x
+Pin header with lock 2x20 2.54mm - 1x
 Screw terminal block 2pin - 1x
 USB-A connector - 1x
 BD139-16 - 22x
 Rezistor 1k - 21x
-Rezistor 33k - 30x
+Rezistor 33k - 9x
+Rezistor 22k - 21x
 Rezistor 10k - 3x
 Rezistor 1k5 - 12x
-Rezistor 100k - 1x
 Rezistor 430R - 1x
+Capacitor ceramic 220nF 5mm - 5x
+Capacitor ceramic 10nF 5mm - 3x
+Capacitor ceramic 100nF 5mm - 5x
+Capacitor elyt 4700uF 25V LOW ESR D18,P7.5mm - 1x
+Capacitor elyt 100uF 50V LOW ESR D10,P5mm - 1x
+Capacitor elyt 1000uF 35V LOW ESR D13,P5mm - 3x
+Capacitor elyt 47uF 100V LOW ESR D10,P5mm - 1x
 Attiny2313-20PU - 3x
 20 pin socket - 3x
 1N4007 - 1x
-BC548C - 1x
 ISP usb programmer - 1x
 Relay 5VDC coil RELRAS0515 - 1x
+Onesided photoresistive PCB of suitable size for the boards.
+Transparent printer foil and pcb making chamistry.
+
