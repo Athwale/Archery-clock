@@ -8,8 +8,11 @@ Older obsolete design build on Raspberry pi 2. Controlled by a wired switch box.
 Current design which uses Raspberry pi 3 and is controlled over wi-fi using a smartphone or other computer. Built to be more modular and easier to build or repair. 
 
 ## PCBs
-The pcb designs are exported from copper side and must be mirror flipped on the board. To produce correct pcb.  
-Check the position of pin 1 on the microcontroller (left top square pad in the design) for reference.
+The pcb DXF and Gerber designs are exported from copper side and must be mirror flipped on the board. To produce correct pcb. Drill files are included, but should be checked and adjusted according to your needs.  
+Check the position of pin 1 on the microcontroller (left top square pad in the design) for correct stencil placing.
 
 ### Viewing the designs
 Electronic designs were made in KiCad.
+
+### Disclaimer
+These designs come as they are, were not professionally produced nor rigorously tested by any institution. You are building this device on your own and you accept all responsibility for it's function and operation.
