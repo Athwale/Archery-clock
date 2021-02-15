@@ -15,4 +15,4 @@ Check the position of pin 1 on the microcontroller (left top square pad in the d
 Electronic designs were made in KiCad.
 
 ### Disclaimer
-These designs come as they are, were not professionally produced nor rigorously tested by any institution. You are building this device on your own and you accept all responsibility for it's function and operation.
+These designs were not professionally produced nor rigorously tested by any institution. You are building this device on your own and you accept all responsibility for it's function and operation.
