@@ -1,3 +1,6 @@
+# This device is currently in development, parts of it may change at any time. 
+If you intend to build it, please wait.
+
 # Archery-clock
 This repository contains electronic designs and software for a custom built sport archery clock used by www.patriotbrno.cz
 
