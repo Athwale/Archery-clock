@@ -1,7 +1,7 @@
 (export (version D)
   (design
     (source /home/omejzlik/Kicad/Archery-clock/V2/Hardware/controller/controller.sch)
-    (date "Thu 26 Nov 2020 10:17:07 AM CET")
+    (date "Wed 03 Mar 2021 07:14:47 PM CET")
     (tool "Eeschema 5.1.8")
     (sheet (number 1) (name /) (tstamps /)
       (title_block
@@ -360,7 +360,7 @@
       (tstamp 5FD1C758))
     (comp (ref C5)
       (value "1000uF 35V LOW ESR")
-      (footprint Capacitor_THT:CP_Radial_D13.0mm_P5.00mm)
+      (footprint Capacitor_THT:CP_Radial_D12.5mm_P5.00mm)
       (datasheet ~)
       (libsource (lib Device) (part CP) (description "Polarized capacitor"))
       (sheetpath (names /) (tstamps /))
