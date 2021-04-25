@@ -35,27 +35,16 @@ Text Label 900  1350 0    50   ~ 0
 $Comp
 L Device:R R7
 U 1 1 5EA95B60
-P 2600 1450
-F 0 "R7" H 2670 1496 50  0000 L CNN
-F 1 "33k" H 2670 1405 50  0000 L CNN
-F 2 "Resistor_THT:R_Axial_DIN0207_L6.3mm_D2.5mm_P10.16mm_Horizontal" V 2530 1450 50  0001 C CNN
-F 3 "~" H 2600 1450 50  0001 C CNN
-	1    2600 1450
-	0    1    1    0   
-$EndComp
-$Comp
-L Device:LED D1
-U 1 1 5EA96AFC
-P 2250 1450
-F 0 "D1" V 2289 1332 50  0000 R CNN
-F 1 "LED_2V_20mA" V 2198 1332 50  0000 R CNN
-F 2 "LED_THT:LED_D5.0mm" H 2250 1450 50  0001 C CNN
-F 3 "~" H 2250 1450 50  0001 C CNN
-	1    2250 1450
-	1    0    0    -1  
+P 2250 1550
+F 0 "R7" H 2320 1596 50  0000 L CNN
+F 1 "33k" H 2320 1505 50  0000 L CNN
+F 2 "Resistor_THT:R_Axial_DIN0207_L6.3mm_D2.5mm_P10.16mm_Horizontal" V 2180 1550 50  0001 C CNN
+F 3 "~" H 2250 1550 50  0001 C CNN
+	1    2250 1550
+	-1   0    0    1   
 $EndComp
 Wire Wire Line
-	1900 1850 1900 1250
+	1900 1850 1900 1200
 $Comp
 L Device:R R1
 U 1 1 5EAD857D
@@ -318,17 +307,6 @@ F 3 "~" H 3850 4350 50  0001 C CNN
 	1    3850 4350
 	-1   0    0    1   
 $EndComp
-Wire Wire Line
-	900  1350 1250 1350
-Wire Wire Line
-	2750 1450 2800 1450
-Wire Wire Line
-	2800 1450 2800 1350
-Connection ~ 2800 1350
-Wire Wire Line
-	2100 1450 2000 1450
-Wire Wire Line
-	2400 1450 2450 1450
 Text Label 3600 2750 0    50   ~ 0
 BIT_B
 $Comp
@@ -353,20 +331,6 @@ F 3 "~" H 10200 1350 50  0001 C CNN
 	1    10200 1350
 	1    0    0    -1  
 $EndComp
-$Comp
-L power:PWR_FLAG #FLG0101
-U 1 1 5EBD70F2
-P 1250 1350
-F 0 "#FLG0101" H 1250 1425 50  0001 C CNN
-F 1 "PWR_FLAG" H 1250 1523 50  0000 C CNN
-F 2 "" H 1250 1350 50  0001 C CNN
-F 3 "~" H 1250 1350 50  0001 C CNN
-	1    1250 1350
-	1    0    0    -1  
-$EndComp
-Connection ~ 1250 1350
-Wire Wire Line
-	1250 1350 2800 1350
 $Comp
 L power:PWR_FLAG #FLG0102
 U 1 1 5EBD76F2
@@ -425,12 +389,8 @@ F 3 "http://ww1.microchip.com/downloads/en/DeviceDoc/Atmel-2543-AVR-ATtiny2313_D
 	1    0    0    -1  
 $EndComp
 Wire Wire Line
-	1900 1250 4500 1250
-Wire Wire Line
-	2800 1350 2950 1350
+	1900 1200 4500 1200
 Connection ~ 7750 4900
-Wire Wire Line
-	4500 1350 4500 1550
 Wire Wire Line
 	4500 3750 4500 4900
 $Comp
@@ -554,23 +514,18 @@ Wire Wire Line
 $Comp
 L Device:R R8
 U 1 1 5FDC2B69
-P 3750 1600
-F 0 "R8" H 3820 1646 50  0000 L CNN
-F 1 "10k" H 3820 1555 50  0000 L CNN
-F 2 "Resistor_THT:R_Axial_DIN0207_L6.3mm_D2.5mm_P10.16mm_Horizontal" V 3680 1600 50  0001 C CNN
-F 3 "~" H 3750 1600 50  0001 C CNN
-	1    3750 1600
+P 3900 1550
+F 0 "R8" H 3750 1600 50  0000 L CNN
+F 1 "10k" H 3700 1500 50  0000 L CNN
+F 2 "Resistor_THT:R_Axial_DIN0207_L6.3mm_D2.5mm_P10.16mm_Horizontal" V 3830 1550 50  0001 C CNN
+F 3 "~" H 3900 1550 50  0001 C CNN
+	1    3900 1550
 	-1   0    0    1   
 $EndComp
 Wire Wire Line
-	3900 1850 3750 1850
+	3900 1850 3900 1700
 Wire Wire Line
-	3750 1850 3750 1750
-Wire Wire Line
-	3750 1450 3750 1350
-Connection ~ 3750 1350
-Wire Wire Line
-	3750 1350 4500 1350
+	3900 1400 3900 1350
 NoConn ~ 3900 2050
 NoConn ~ 3900 2250
 NoConn ~ 5100 1850
@@ -655,7 +610,7 @@ F 3 "~" H 6150 1600 50  0001 C CNN
 	1    0    0    -1  
 $EndComp
 Wire Wire Line
-	4500 1250 4500 900 
+	4500 1200 4500 900 
 $Comp
 L Device:R R18
 U 1 1 5FDCFB8C
@@ -818,7 +773,7 @@ Text Notes 5250 2800 0    50   ~ 0
 1 pin - 4.5V 3mA, 21mA over all pins \nMax per pin: 20mA\nMax over all pins: 60mA
 Text Notes 2400 2650 0    50   ~ 0
 3.3V 800uA
-Text Notes 3750 1350 0    50   ~ 0
+Text Notes 3900 1350 0    50   ~ 0
 5V
 $Comp
 L Device:LED D9
@@ -972,72 +927,48 @@ Connection ~ 10750 1250
 $Comp
 L Device:C C2
 U 1 1 5FBF6D2E
-P 3200 1600
-F 0 "C2" H 3315 1646 50  0000 L CNN
-F 1 "10nF" H 3315 1555 50  0000 L CNN
-F 2 "Capacitor_THT:C_Disc_D5.0mm_W2.5mm_P5.00mm" H 3238 1450 50  0001 C CNN
-F 3 "~" H 3200 1600 50  0001 C CNN
-	1    3200 1600
+P 3450 1700
+F 0 "C2" H 3400 1800 50  0000 L CNN
+F 1 "10nF" H 3350 1900 50  0000 L CNN
+F 2 "Capacitor_THT:C_Disc_D5.0mm_W2.5mm_P5.00mm" H 3488 1550 50  0001 C CNN
+F 3 "~" H 3450 1700 50  0001 C CNN
+	1    3450 1700
 	1    0    0    -1  
 $EndComp
 Wire Wire Line
-	3200 1450 3200 1350
-Connection ~ 3200 1350
+	3450 1550 3450 1350
+Connection ~ 3450 1350
 Wire Wire Line
-	3200 1350 3550 1350
+	3450 1850 3450 2150
 Wire Wire Line
-	3200 1750 3200 2150
-Wire Wire Line
-	3200 2150 2950 2150
+	3450 2150 3200 2150
 Connection ~ 2000 2150
 Wire Wire Line
 	2000 2150 2000 2700
-$Comp
-L Device:CP C1
-U 1 1 5FC3C919
-P 3550 2000
-F 0 "C1" H 3668 2046 50  0000 L CNN
-F 1 "47uF" H 3668 1955 50  0000 L CNN
-F 2 "Capacitor_THT:CP_Radial_D10.0mm_P5.00mm" H 3588 1850 50  0001 C CNN
-F 3 "~" H 3550 2000 50  0001 C CNN
-	1    3550 2000
-	1    0    0    -1  
-$EndComp
 Wire Wire Line
-	3550 1850 3550 1350
-Connection ~ 3550 1350
-Wire Wire Line
-	3550 1350 3750 1350
-Connection ~ 3200 2150
-Wire Wire Line
-	1500 1450 1700 1450
+	1500 1450 1600 1450
 Wire Wire Line
 	2000 1100 2000 1450
 Wire Wire Line
 	2000 1100 5250 1100
-Wire Wire Line
-	3200 2150 3550 2150
 $Comp
 L Device:C C3
 U 1 1 5FCBA4E0
-P 2950 1800
-F 0 "C3" H 3065 1846 50  0000 L CNN
-F 1 "100nF" H 3065 1755 50  0000 L CNN
-F 2 "Capacitor_THT:C_Disc_D5.0mm_W2.5mm_P5.00mm" H 2988 1650 50  0001 C CNN
-F 3 "~" H 2950 1800 50  0001 C CNN
-	1    2950 1800
+P 3200 1700
+F 0 "C3" H 3150 1800 50  0000 L CNN
+F 1 "100nF" H 3100 1900 50  0000 L CNN
+F 2 "Capacitor_THT:C_Disc_D5.0mm_W2.5mm_P5.00mm" H 3238 1550 50  0001 C CNN
+F 3 "~" H 3200 1700 50  0001 C CNN
+	1    3200 1700
 	1    0    0    -1  
 $EndComp
 Wire Wire Line
-	2950 1650 2950 1350
-Connection ~ 2950 1350
+	3200 1550 3200 1350
 Wire Wire Line
-	2950 1350 3200 1350
+	3200 1350 3450 1350
 Wire Wire Line
-	2950 1950 2950 2150
-Connection ~ 2950 2150
-Wire Wire Line
-	2950 2150 2000 2150
+	3200 1850 3200 2150
+Connection ~ 3200 2150
 $Comp
 L Device:C C4
 U 1 1 5FD1C758
@@ -1066,28 +997,129 @@ Wire Wire Line
 Wire Wire Line
 	1150 1650 900  1650
 Connection ~ 1250 1850
-Connection ~ 1700 1450
+Connection ~ 1600 1450
 Wire Wire Line
-	1700 1450 2000 1450
+	1600 1450 2000 1450
 Wire Wire Line
-	1700 1500 1700 1450
+	1600 1500 1600 1450
 $Comp
 L Device:CP C5
 U 1 1 5FD89F46
-P 1700 1650
-F 0 "C5" H 1582 1604 50  0000 R CNN
-F 1 "1000uF 35V LOW ESR" H 1582 1695 50  0000 R CNN
-F 2 "Capacitor_THT:CP_Radial_D12.5mm_P5.00mm" H 1738 1500 50  0001 C CNN
-F 3 "~" H 1700 1650 50  0001 C CNN
-	1    1700 1650
+P 1600 1650
+F 0 "C5" H 1482 1604 50  0000 R CNN
+F 1 "1000uF 35V LOW ESR" H 1482 1695 50  0000 R CNN
+F 2 "Capacitor_THT:CP_Radial_D12.5mm_P5.00mm" H 1638 1500 50  0001 C CNN
+F 3 "~" H 1600 1650 50  0001 C CNN
+	1    1600 1650
 	-1   0    0    1   
 $EndComp
 Wire Wire Line
-	1500 1850 1700 1850
+	1500 1850 1600 1850
 Wire Wire Line
-	1700 1850 1700 1800
+	1600 1850 1600 1800
 Connection ~ 1500 1850
 Wire Wire Line
-	1700 1850 1900 1850
-Connection ~ 1700 1850
+	1600 1850 1900 1850
+Connection ~ 1600 1850
+$Comp
+L Device:L_Core_Ferrite L0
+U 1 1 6093B000
+P 2550 1350
+F 0 "L0" V 2500 1350 50  0000 C CNN
+F 1 "22uH" V 2400 1350 50  0000 C CNN
+F 2 "Inductor_THT:L_Axial_L7.0mm_D3.3mm_P10.16mm_Horizontal_Fastron_MICC" H 2550 1350 50  0001 C CNN
+F 3 "~" H 2550 1350 50  0001 C CNN
+	1    2550 1350
+	0    -1   -1   0   
+$EndComp
+Wire Wire Line
+	3450 1350 3700 1350
+Wire Wire Line
+	2000 2150 2250 2150
+Wire Wire Line
+	2800 2000 2800 2150
+Connection ~ 2800 2150
+Wire Wire Line
+	2800 2150 3200 2150
+Connection ~ 3200 1350
+$Comp
+L Device:CP C1
+U 1 1 5FC3C919
+P 2800 1850
+F 0 "C1" H 2918 1896 50  0000 L CNN
+F 1 "10uF 16V LOW ESR" H 2918 1805 50  0000 L CNN
+F 2 "Capacitor_THT:CP_Radial_D5.0mm_P2.00mm" H 2838 1700 50  0001 C CNN
+F 3 "~" H 2800 1850 50  0001 C CNN
+	1    2800 1850
+	1    0    0    -1  
+$EndComp
+$Comp
+L Device:C C6
+U 1 1 60AAB9BE
+P 3700 1700
+F 0 "C6" H 3650 1800 50  0000 L CNN
+F 1 "1nF" H 3600 1900 50  0000 L CNN
+F 2 "Capacitor_THT:C_Disc_D5.0mm_W2.5mm_P5.00mm" H 3738 1550 50  0001 C CNN
+F 3 "~" H 3700 1700 50  0001 C CNN
+	1    3700 1700
+	1    0    0    -1  
+$EndComp
+Wire Wire Line
+	3700 1550 3700 1350
+Connection ~ 3700 1350
+Wire Wire Line
+	3700 1350 3900 1350
+Wire Wire Line
+	3700 1850 3700 2150
+Wire Wire Line
+	3700 2150 3450 2150
+Connection ~ 3450 2150
+Wire Wire Line
+	2800 1350 3200 1350
+Wire Wire Line
+	2700 1350 2800 1350
+Connection ~ 2800 1350
+$Comp
+L Device:LED D1
+U 1 1 5EA96AFC
+P 2250 1950
+F 0 "D1" V 2289 1832 50  0000 R CNN
+F 1 "LED_2V_20mA" V 2198 1832 50  0000 R CNN
+F 2 "LED_THT:LED_D5.0mm" H 2250 1950 50  0001 C CNN
+F 3 "~" H 2250 1950 50  0001 C CNN
+	1    2250 1950
+	0    -1   -1   0   
+$EndComp
+Wire Wire Line
+	4500 1550 4500 1350
+Wire Wire Line
+	4500 1350 3900 1350
+Connection ~ 3900 1350
+$Comp
+L power:PWR_FLAG #FLG0101
+U 1 1 60C00404
+P 2800 1350
+F 0 "#FLG0101" H 2800 1425 50  0001 C CNN
+F 1 "PWR_FLAG" H 2800 1523 50  0000 C CNN
+F 2 "" H 2800 1350 50  0001 C CNN
+F 3 "~" H 2800 1350 50  0001 C CNN
+	1    2800 1350
+	1    0    0    -1  
+$EndComp
+Wire Wire Line
+	900  1350 2250 1350
+Wire Wire Line
+	2800 1350 2800 1700
+Wire Wire Line
+	2250 1400 2250 1350
+Connection ~ 2250 1350
+Wire Wire Line
+	2250 1350 2400 1350
+Wire Wire Line
+	2250 1700 2250 1800
+Wire Wire Line
+	2250 2100 2250 2150
+Connection ~ 2250 2150
+Wire Wire Line
+	2250 2150 2800 2150
 $EndSCHEMATC
