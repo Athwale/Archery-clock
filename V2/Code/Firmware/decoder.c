@@ -14,19 +14,19 @@
 // Port num: | 2  | 3  | 4  | 5
 // Bit order:| 0  | 1  | 2  | 3
 
-// Custom 7 segment display layout
+// Custom 7 segment display layout.
 //      A
 //     B C
 //      D
 //     E F
 //      G
 
-#include <util/delay.h>
-#include <avr/io.h>
-
-// Base frequency of the built in clock 1MHz
+// Base frequency of the built in clock 1MHz.
 #undef F_CPU
 #define F_CPU 1000000UL
+
+#include <util/delay.h>
+#include <avr/io.h>
 
 int decode[16] = {
     //ABCDEFG-
@@ -81,7 +81,7 @@ void self_test(void) {
 }
 
 void boot_animation(void) {
-    // Show a boot animation on the display until number 8 is sent to the input
+    // Show a boot animation on the display until number 8 is sent to the input.
     do {
         PORTB = 0b00000010;
         _delay_ms(250);
@@ -94,10 +94,16 @@ void boot_animation(void) {
 }
 
 void main_loop(void) {
-    int number;
+    int input1;
+    int input2;
     while(1) {
-        number = get_input_num();
-        PORTB = decode[number];
+        // Filter out input interference by readig the same input twice after 50 ms and comparing it.
+        input1 = get_input_num();
+        _delay_ms(50);
+        input2 = get_input_num();
+        if(input1 == input2) {
+            PORTB = decode[input2];
+        }
     }
     return;
 }
