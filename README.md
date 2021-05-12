@@ -1,14 +1,14 @@
-# This device is currently in development, parts of it may change at any time. 
+# First finished prototype is now being tested in the field.
 If you intend to build it, please wait.
 
 # Archery-clock
 This repository contains electronic designs and software for a custom built sport archery clock used by www.patriotbrno.cz
 
+## V2
+Current design which uses Raspberry pi 3 and is controlled over wi-fi using a smartphone or other computer. Built to be more modular and easier to build or repair.
+
 ## V1
 Older obsolete design build on Raspberry pi 2. Controlled by a wired switch box.
-
-## V2
-Current design which uses Raspberry pi 3 and is controlled over wi-fi using a smartphone or other computer. Built to be more modular and easier to build or repair. 
 
 ## PCBs
 The pcb DXF and Gerber designs are exported from copper side and must be mirror flipped on the board. To produce correct pcb. Drill files are included, but should be checked and adjusted according to your needs.  
