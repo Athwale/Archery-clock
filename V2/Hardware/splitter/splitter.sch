@@ -14,26 +14,15 @@ Comment3 ""
 Comment4 ""
 $EndDescr
 $Comp
-L Connector_Generic:Conn_02x03_Counter_Clockwise J1
-U 1 1 5EA22E2D
-P 4450 3750
-F 0 "J1" H 4500 4067 50  0000 C CNN
-F 1 "Control_seg:1" H 4500 3976 50  0000 C CNN
-F 2 "Connector_PinHeader_2.54mm:PinHeader_2x03_P2.54mm_Horizontal" H 4450 3750 50  0001 C CNN
-F 3 "~" H 4450 3750 50  0001 C CNN
-	1    4450 3750
-	0    -1   -1   0   
-$EndComp
-$Comp
-L Connector_Generic:Conn_02x03_Counter_Clockwise J2
+L Connector_Generic:Conn_02x05_Odd_Even J2
 U 1 1 5EA23348
-P 3850 4300
-F 0 "J2" H 3900 4617 50  0000 C CNN
-F 1 "Control_seg:2" H 3900 4526 50  0000 C CNN
-F 2 "Connector_PinHeader_2.54mm:PinHeader_2x03_P2.54mm_Horizontal" H 3850 4300 50  0001 C CNN
-F 3 "~" H 3850 4300 50  0001 C CNN
-	1    3850 4300
-	0    -1   -1   0   
+P 3950 4400
+F 0 "J2" H 4000 4100 50  0000 C CNN
+F 1 "Control_seg:2" H 4000 4000 50  0000 C CNN
+F 2 "Connector_IDC:IDC-Header_2x05-1MP_P2.54mm_Latch_Vertical" H 3950 4400 50  0001 C CNN
+F 3 "~" H 3950 4400 50  0001 C CNN
+	1    3950 4400
+	-1   0    0    1   
 $EndComp
 $Comp
 L Connector_Generic:Conn_01x04 J4
@@ -41,7 +30,7 @@ U 1 1 5EA27719
 P 3750 2750
 F 0 "J4" H 3830 2742 50  0000 L CNN
 F 1 "Molex_PSU_F" H 3830 2651 50  0000 L CNN
-F 2 "PSU:conn_hdd_15-24-4441" H 3750 2750 50  0001 C CNN
+F 2 "KicadLib:conn_hdd_15-24-4449" H 3750 2750 50  0001 C CNN
 F 3 "~" H 3750 2750 50  0001 C CNN
 	1    3750 2750
 	-1   0    0    1   
@@ -271,7 +260,7 @@ U 1 1 5EA19BA2
 P 5800 4600
 F 0 "J0" H 5850 5717 50  0000 C CNN
 F 1 "Rpi_40Pin_F" H 5850 5626 50  0000 C CNN
-F 2 "Connector_IDC:IDC-Header_2x20_P2.54mm_Vertical" H 5800 4600 50  0001 C CNN
+F 2 "Connector_PinSocket_2.54mm:PinSocket_2x20_P2.54mm_Vertical" H 5800 4600 50  0001 C CNN
 F 3 "~" H 5800 4600 50  0001 C CNN
 	1    5800 4600
 	1    0    0    -1  
@@ -305,94 +294,18 @@ seg:3_bit:c_gpio:19
 Text Label 5600 5500 2    50   ~ 0
 seg:3_bit:d_gpio:26
 Wire Wire Line
-	4750 4200 5600 4200
-Wire Wire Line
-	4050 4700 5600 4700
-Wire Wire Line
-	3450 5300 5600 5300
-Wire Wire Line
-	4850 4000 5600 4000
-Wire Wire Line
-	4750 4200 4750 3400
-Wire Wire Line
-	4750 3400 4450 3400
-Wire Wire Line
-	4450 3400 4450 3450
-Wire Wire Line
-	4550 4300 5600 4300
-Wire Wire Line
-	4150 4600 5600 4600
-Wire Wire Line
-	4050 4700 4050 3950
-Wire Wire Line
-	4050 3950 3850 3950
-Wire Wire Line
-	3850 3950 3850 4000
-Wire Wire Line
-	3950 4800 5600 4800
-Wire Wire Line
-	3550 5200 5600 5200
-Wire Wire Line
-	3450 5300 3450 4500
-Wire Wire Line
-	3450 4500 3250 4500
-Wire Wire Line
-	3350 5400 5600 5400
-NoConn ~ 3950 4000
-NoConn ~ 4550 3450
-Wire Wire Line
-	4550 4300 4550 3950
-Wire Wire Line
-	4350 4400 4350 3950
-Wire Wire Line
-	4350 4400 5600 4400
-Wire Wire Line
-	4850 4000 4850 3350
-Wire Wire Line
-	4850 3350 4350 3350
-Wire Wire Line
-	4350 3350 4350 3450
-NoConn ~ 4450 3950
-Wire Wire Line
-	3950 4800 3950 4500
-Wire Wire Line
-	4150 4600 4150 3900
-Wire Wire Line
-	4150 3900 3750 3900
-Wire Wire Line
-	3750 3900 3750 4000
-Wire Wire Line
-	3750 5100 5600 5100
-Wire Wire Line
-	3750 5100 3750 4500
-Wire Wire Line
-	3250 4500 3250 4550
-NoConn ~ 3350 4550
+	4600 5200 5600 5200
 $Comp
-L Connector_Generic:Conn_02x03_Counter_Clockwise J3
+L Connector_Generic:Conn_02x05_Odd_Even J3
 U 1 1 5EA246A5
-P 3250 4850
-F 0 "J3" H 3300 5167 50  0000 C CNN
-F 1 "Control_seg:3" H 3300 5076 50  0000 C CNN
-F 2 "Connector_PinHeader_2.54mm:PinHeader_2x03_P2.54mm_Horizontal" H 3250 4850 50  0001 C CNN
-F 3 "~" H 3250 4850 50  0001 C CNN
-	1    3250 4850
-	0    -1   -1   0   
+P 3950 5150
+F 0 "J3" H 4000 4850 50  0000 C CNN
+F 1 "Control_seg:3" H 4000 4750 50  0000 C CNN
+F 2 "Connector_IDC:IDC-Header_2x05-1MP_P2.54mm_Latch_Vertical" H 3950 5150 50  0001 C CNN
+F 3 "~" H 3950 5150 50  0001 C CNN
+	1    3950 5150
+	-1   0    0    1   
 $EndComp
-Wire Wire Line
-	3350 5400 3350 5050
-Wire Wire Line
-	3150 5500 3150 5050
-Wire Wire Line
-	3150 5500 5600 5500
-Wire Wire Line
-	3550 5200 3550 4450
-Wire Wire Line
-	3550 4450 3150 4450
-Wire Wire Line
-	3150 4450 3150 4550
-NoConn ~ 3850 4500
-NoConn ~ 3250 5050
 Wire Wire Line
 	6200 4600 7150 4600
 Wire Wire Line
@@ -525,4 +438,149 @@ Wire Wire Line
 	9000 3250 9000 4300
 Wire Wire Line
 	9000 4300 9100 4300
+$Comp
+L Connector_Generic:Conn_02x05_Odd_Even J1
+U 1 1 5EA22E2D
+P 3950 3650
+F 0 "J1" H 4000 3350 50  0000 C CNN
+F 1 "Control_seg:1" H 4000 3250 50  0000 C CNN
+F 2 "Connector_IDC:IDC-Header_2x05-1MP_P2.54mm_Latch_Vertical" H 3950 3650 50  0001 C CNN
+F 3 "~" H 3950 3650 50  0001 C CNN
+	1    3950 3650
+	-1   0    0    1   
+$EndComp
+Wire Wire Line
+	4450 4400 4450 3550
+Wire Wire Line
+	4450 3550 4150 3550
+Wire Wire Line
+	4450 4400 5600 4400
+Wire Wire Line
+	4400 4300 4400 3650
+Wire Wire Line
+	4400 3650 4150 3650
+Wire Wire Line
+	4400 4300 5600 4300
+Wire Wire Line
+	4350 4200 4350 3750
+Wire Wire Line
+	4350 3750 4150 3750
+Wire Wire Line
+	4350 4200 5600 4200
+Wire Wire Line
+	4150 3450 4150 3300
+Wire Wire Line
+	4150 3300 3650 3300
+Wire Wire Line
+	3650 3300 3650 3450
+Wire Wire Line
+	3650 3450 3650 3550
+Connection ~ 3650 3450
+Wire Wire Line
+	3650 3550 3650 3650
+Connection ~ 3650 3550
+Wire Wire Line
+	3650 3650 3650 3750
+Connection ~ 3650 3650
+Connection ~ 3650 3750
+Wire Wire Line
+	3650 3750 3650 3850
+Wire Wire Line
+	4150 3300 4450 3300
+Wire Wire Line
+	4450 3300 4450 2700
+Connection ~ 4150 3300
+Connection ~ 4450 2700
+Wire Wire Line
+	4350 5100 4350 4300
+Wire Wire Line
+	4350 4300 4150 4300
+Wire Wire Line
+	4350 5100 5600 5100
+Wire Wire Line
+	4300 4800 4300 4400
+Wire Wire Line
+	4300 4400 4150 4400
+Wire Wire Line
+	4300 4800 5600 4800
+Wire Wire Line
+	4300 4000 5600 4000
+Wire Wire Line
+	4250 4700 5600 4700
+Wire Wire Line
+	4150 4500 4250 4500
+Wire Wire Line
+	4250 4500 4250 4700
+Wire Wire Line
+	4150 3850 4300 3850
+Wire Wire Line
+	4300 3850 4300 4000
+Wire Wire Line
+	4150 4600 5600 4600
+Wire Wire Line
+	4150 4200 4150 4050
+Wire Wire Line
+	4150 4050 3650 4050
+Wire Wire Line
+	3650 4050 3650 4200
+Wire Wire Line
+	3650 4200 3650 4300
+Connection ~ 3650 4200
+Wire Wire Line
+	3650 4300 3650 4400
+Connection ~ 3650 4300
+Wire Wire Line
+	3650 4400 3650 4500
+Connection ~ 3650 4400
+Wire Wire Line
+	3650 4500 3650 4600
+Connection ~ 3650 4500
+Wire Wire Line
+	3650 4050 3650 3850
+Connection ~ 3650 4050
+Connection ~ 3650 3850
+Wire Wire Line
+	4300 5500 4300 5050
+Wire Wire Line
+	4300 5050 4150 5050
+Wire Wire Line
+	4300 5500 5600 5500
+Wire Wire Line
+	4250 5400 4250 5150
+Wire Wire Line
+	4250 5150 4150 5150
+Wire Wire Line
+	4250 5400 5600 5400
+Wire Wire Line
+	4700 5300 5600 5300
+Wire Wire Line
+	4600 5200 4600 5350
+Wire Wire Line
+	4600 5350 4150 5350
+Wire Wire Line
+	4700 5250 4700 5300
+Wire Wire Line
+	4150 5250 4700 5250
+Wire Wire Line
+	4150 4950 4150 4800
+Wire Wire Line
+	4150 4800 3650 4800
+Wire Wire Line
+	3650 4800 3650 4950
+Wire Wire Line
+	3650 4950 3650 5050
+Connection ~ 3650 4950
+Wire Wire Line
+	3650 5050 3650 5150
+Connection ~ 3650 5050
+Wire Wire Line
+	3650 5150 3650 5250
+Connection ~ 3650 5150
+Wire Wire Line
+	3650 5250 3650 5350
+Connection ~ 3650 5250
+Wire Wire Line
+	3650 4800 3650 4600
+Connection ~ 3650 4800
+Connection ~ 3650 4600
 $EndSCHEMATC

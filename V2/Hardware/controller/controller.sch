@@ -299,23 +299,23 @@ $EndComp
 $Comp
 L Device:R R12
 U 1 1 5EB47108
-P 3850 4350
-F 0 "R12" H 3920 4396 50  0000 L CNN
-F 1 "1k5" H 3920 4305 50  0000 L CNN
-F 2 "Resistor_THT:R_Axial_DIN0207_L6.3mm_D2.5mm_P10.16mm_Horizontal" V 3780 4350 50  0001 C CNN
-F 3 "~" H 3850 4350 50  0001 C CNN
-	1    3850 4350
+P 3300 4350
+F 0 "R12" H 3370 4396 50  0000 L CNN
+F 1 "1k5" H 3370 4305 50  0000 L CNN
+F 2 "Resistor_THT:R_Axial_DIN0207_L6.3mm_D2.5mm_P10.16mm_Horizontal" V 3230 4350 50  0001 C CNN
+F 3 "~" H 3300 4350 50  0001 C CNN
+	1    3300 4350
 	-1   0    0    1   
 $EndComp
-Text Label 3600 2750 0    50   ~ 0
+Text Label 3000 3450 2    50   ~ 0
 BIT_B
 $Comp
 L Connector_Generic:Conn_01x04 J0
 U 1 1 5EA32CD2
 P 700 1550
 F 0 "J0" H 618 1125 50  0000 C CNN
-F 1 "Molex_PSU_F" H 618 1216 50  0000 C CNN
-F 2 "PSU:conn_hdd_15-24-4441" H 700 1550 50  0001 C CNN
+F 1 "Molex_PSU" H 618 1216 50  0000 C CNN
+F 2 "KicadLib:conn_hdd_15-24-4449" H 700 1550 50  0001 C CNN
 F 3 "~" H 700 1550 50  0001 C CNN
 	1    700  1550
 	-1   0    0    1   
@@ -325,8 +325,8 @@ L Connector_Generic:Conn_02x05_Counter_Clockwise J2
 U 1 1 5EACC56A
 P 10200 1350
 F 0 "J2" H 10250 1750 50  0000 C CNN
-F 1 "Flat_7seg_F" H 10250 1650 50  0000 C CNN
-F 2 "Connector_PinHeader_2.54mm:PinHeader_2x05_P2.54mm_Horizontal" H 10200 1350 50  0001 C CNN
+F 1 "7SEG_12V" H 10250 1650 50  0000 C CNN
+F 2 "Connector_IDC:IDC-Header_2x05-1MP_P2.54mm_Latch_Vertical" H 10200 1350 50  0001 C CNN
 F 3 "~" H 10200 1350 50  0001 C CNN
 	1    10200 1350
 	1    0    0    -1  
@@ -396,12 +396,12 @@ Wire Wire Line
 $Comp
 L Device:R R11
 U 1 1 5EB45F1E
-P 3250 4350
-F 0 "R11" H 3320 4396 50  0000 L CNN
-F 1 "1k5" H 3320 4305 50  0000 L CNN
-F 2 "Resistor_THT:R_Axial_DIN0207_L6.3mm_D2.5mm_P10.16mm_Horizontal" V 3180 4350 50  0001 C CNN
-F 3 "~" H 3250 4350 50  0001 C CNN
-	1    3250 4350
+P 3000 4350
+F 0 "R11" H 3070 4396 50  0000 L CNN
+F 1 "1k5" H 3070 4305 50  0000 L CNN
+F 2 "Resistor_THT:R_Axial_DIN0207_L6.3mm_D2.5mm_P10.16mm_Horizontal" V 2930 4350 50  0001 C CNN
+F 3 "~" H 3000 4350 50  0001 C CNN
+	1    3000 4350
 	-1   0    0    1   
 $EndComp
 Wire Wire Line
@@ -420,23 +420,23 @@ $EndComp
 $Comp
 L Device:LED D4
 U 1 1 5FC9598B
-P 3250 4650
-F 0 "D4" V 3289 4532 50  0000 R CNN
-F 1 "LED_2V_20mA" V 3198 4532 50  0000 R CNN
-F 2 "LED_THT:LED_D5.0mm" H 3250 4650 50  0001 C CNN
-F 3 "~" H 3250 4650 50  0001 C CNN
-	1    3250 4650
+P 3000 4650
+F 0 "D4" V 3039 4532 50  0000 R CNN
+F 1 "LED_2V_20mA" V 2948 4532 50  0000 R CNN
+F 2 "LED_THT:LED_D5.0mm" H 3000 4650 50  0001 C CNN
+F 3 "~" H 3000 4650 50  0001 C CNN
+	1    3000 4650
 	0    -1   -1   0   
 $EndComp
 $Comp
 L Device:LED D5
 U 1 1 5FC961FF
-P 3850 4650
-F 0 "D5" V 3889 4532 50  0000 R CNN
-F 1 "LED_2V_20mA" V 3798 4532 50  0000 R CNN
-F 2 "LED_THT:LED_D5.0mm" H 3850 4650 50  0001 C CNN
-F 3 "~" H 3850 4650 50  0001 C CNN
-	1    3850 4650
+P 3300 4650
+F 0 "D5" V 3339 4532 50  0000 R CNN
+F 1 "LED_2V_20mA" V 3248 4532 50  0000 R CNN
+F 2 "LED_THT:LED_D5.0mm" H 3300 4650 50  0001 C CNN
+F 3 "~" H 3300 4650 50  0001 C CNN
+	1    3300 4650
 	0    -1   -1   0   
 $EndComp
 $Comp
@@ -472,15 +472,15 @@ Wire Wire Line
 	2700 4800 2700 4900
 Connection ~ 2700 4900
 Wire Wire Line
-	2700 4900 3250 4900
+	2700 4900 3000 4900
 Wire Wire Line
-	3250 4800 3250 4900
-Connection ~ 3250 4900
+	3000 4800 3000 4900
+Connection ~ 3000 4900
 Wire Wire Line
-	3250 4900 3850 4900
+	3000 4900 3300 4900
 Wire Wire Line
-	3850 4800 3850 4900
-Connection ~ 3850 4900
+	3300 4800 3300 4900
+Connection ~ 3300 4900
 Wire Wire Line
 	2400 3850 5450 3850
 Connection ~ 2400 3850
@@ -492,9 +492,9 @@ Connection ~ 2700 3950
 Wire Wire Line
 	2700 3950 2700 4200
 Wire Wire Line
-	3250 4050 5750 4050
+	3000 4050 5750 4050
 Wire Wire Line
-	3250 4050 3250 4200
+	3000 4050 3000 4200
 Wire Wire Line
 	5450 2950 5100 2950
 Wire Wire Line
@@ -771,7 +771,7 @@ Text Notes 8150 900  0    50   ~ 0
 12V cca 700mA
 Text Notes 5250 2800 0    50   ~ 0
 1 pin - 4.5V 3mA, 21mA over all pins \nMax per pin: 20mA\nMax over all pins: 60mA
-Text Notes 2400 2650 0    50   ~ 0
+Text Notes 2400 2950 0    50   ~ 0
 3.3V 800uA
 Text Notes 3900 1350 0    50   ~ 0
 5V
@@ -827,59 +827,22 @@ Wire Wire Line
 	8900 800  10850 800 
 Wire Wire Line
 	9800 1700 9800 4350
-Wire Wire Line
-	2700 2850 2700 3950
-Wire Wire Line
-	3700 2750 3600 2750
-Text Label 3100 2650 2    50   ~ 0
+Text Label 2400 3450 2    50   ~ 0
 BIT_D
-Text Label 3100 2850 2    50   ~ 0
+Text Label 2700 3450 2    50   ~ 0
 BIT_C
-Text Label 3600 2650 0    50   ~ 0
+Text Label 3300 3450 2    50   ~ 0
 BIT_A
-$Comp
-L Connector_Generic:Conn_02x03_Counter_Clockwise J3
-U 1 1 5EA33B7C
-P 3300 2750
-F 0 "J3" H 3350 3067 50  0000 C CNN
-F 1 "Rpi_DATA_F_3.3V" H 3350 2976 50  0000 C CNN
-F 2 "Connector_PinHeader_2.54mm:PinHeader_2x03_P2.54mm_Horizontal" H 3300 2750 50  0001 C CNN
-F 3 "~" H 3300 2750 50  0001 C CNN
-	1    3300 2750
-	1    0    0    -1  
-$EndComp
 Wire Wire Line
-	3850 4150 5900 4150
+	3300 4150 5900 4150
 Wire Wire Line
-	3850 4150 3850 4200
-Connection ~ 3850 4150
+	3300 4150 3300 4200
+Connection ~ 3300 4150
 Wire Wire Line
-	3850 4900 4500 4900
+	3300 4900 4500 4900
 Wire Wire Line
-	3850 2650 3600 2650
-Wire Wire Line
-	3850 2650 3850 4150
-NoConn ~ 3100 2750
-Wire Wire Line
-	2700 2850 3100 2850
-Wire Wire Line
-	2400 2650 3100 2650
-Wire Wire Line
-	2400 2650 2400 3850
-Wire Wire Line
-	3700 2750 3700 3250
-Wire Wire Line
-	3700 3250 3250 3250
-Wire Wire Line
-	3250 3250 3250 4050
-Connection ~ 3250 4050
-Wire Wire Line
-	3100 2850 3100 3000
-Wire Wire Line
-	3100 3000 3600 3000
-Wire Wire Line
-	3600 3000 3600 2850
-Connection ~ 3100 2850
+	2400 2950 2400 3850
+Connection ~ 3000 4050
 Wire Wire Line
 	10750 900  10750 1150
 Wire Wire Line
@@ -1122,4 +1085,53 @@ Wire Wire Line
 Connection ~ 2250 2150
 Wire Wire Line
 	2250 2150 2800 2150
+$Comp
+L Connector_Generic:Conn_02x05_Odd_Even J3
+U 1 1 60C34227
+P 3550 2850
+F 0 "J3" H 3550 3250 50  0000 C CNN
+F 1 "RPI_DATA_3.3V" H 3550 3150 50  0000 C CNN
+F 2 "Connector_IDC:IDC-Header_2x05-1MP_P2.54mm_Latch_Vertical" H 3550 2850 50  0001 C CNN
+F 3 "~" H 3550 2850 50  0001 C CNN
+	1    3550 2850
+	1    0    0    -1  
+$EndComp
+Wire Wire Line
+	3700 2150 3850 2150
+Wire Wire Line
+	3850 2150 3850 2650
+Connection ~ 3700 2150
+Wire Wire Line
+	3850 2650 3850 2750
+Connection ~ 3850 2650
+Wire Wire Line
+	3850 2750 3850 2850
+Connection ~ 3850 2750
+Wire Wire Line
+	3850 2850 3850 2950
+Connection ~ 3850 2850
+Wire Wire Line
+	2400 2950 3350 2950
+Wire Wire Line
+	2700 2850 3350 2850
+Wire Wire Line
+	2700 2850 2700 3950
+Wire Wire Line
+	3000 2750 3350 2750
+Wire Wire Line
+	3000 2750 3000 4050
+Wire Wire Line
+	3300 2650 3350 2650
+Wire Wire Line
+	3300 2650 3300 4150
+Wire Wire Line
+	3850 3050 3850 2950
+Connection ~ 3850 2950
+Wire Wire Line
+	3350 3050 3350 3150
+Wire Wire Line
+	3350 3150 3850 3150
+Wire Wire Line
+	3850 3150 3850 3050
+Connection ~ 3850 3050
 $EndSCHEMATC

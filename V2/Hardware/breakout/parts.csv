@@ -1,9 +1,0 @@
-"Id";"Designator";"Package";"Quantity";"Designation";"Supplier and ref";
-1;"J4";"PinSocket_1x02_P2.54mm_Vertical";1;"Conn_B";;;
-2;"J7";"PinSocket_1x02_P2.54mm_Vertical";1;"Conn_G";;;
-3;"J3";"PinSocket_1x02_P2.54mm_Vertical";1;"Conn_E";;;
-4;"J2";"PinSocket_1x02_P2.54mm_Vertical";1;"Conn_C";;;
-5;"J6";"PinSocket_1x02_P2.54mm_Vertical";1;"Conn_A";;;
-6;"J1";"PinSocket_1x02_P2.54mm_Vertical";1;"Conn_D";;;
-7;"J5";"PinSocket_1x02_P2.54mm_Vertical";1;"Conn_F";;;
-8;"J0";"PinHeader_2x05_P2.54mm_Horizontal";1;"Flat_7seg_F";;;
