@@ -8,8 +8,8 @@ This repository contains electronic designs and software for a custom built spor
 Current design which uses Raspberry pi 3 and is controlled over wi-fi using a smartphone or other computer. Built to be more modular and easier to build or repair.
 
 ## PCBs
-The pcb DXF and Gerber designs are exported from copper side and must be mirror flipped on the board. To produce correct pcb. Drill files are included, but should be checked and adjusted according to your needs.  
-Check the position of pin 1 on the microcontroller (left top square pad in the design) for correct stencil placing.
+The DXF and Gerber files are exported from copper side and must be mirror flipped by the manufacturer to produce correct boards, KiCad does not have this functionality built in. Drill files are included, but should be checked and adjusted according to your needs.  
+Check the position of pin 1 on the microcontroller (square pad in the design) for correct stencil placement.
 
 ### Viewing the designs
 Electronic designs were made in KiCad.
