@@ -1,3 +1,0 @@
-(sym_lib_table
-  (lib (name splitter-rescue)(type Legacy)(uri ${KIPRJMOD}/splitter-rescue.lib)(options "")(descr ""))
-)
