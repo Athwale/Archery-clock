@@ -1,0 +1,16 @@
+"Id";"Designator";"Package";"Quantity";"Designation";"Supplier and ref";
+1;"J7,J6";"TerminalBlock_RND_205-00067_1x02_P7.50mm_Horizontal";2;"Siren";;;
+2;"K0";"Relay_SPDT_Finder_36.11";1;"RELRAS0515";;;
+3;"D2,D0";"LED_D5.0mm";2;"LED_2V_20mA";;;
+4;"R1,R0";"R_Axial_DIN0207_L6.3mm_D2.5mm_P10.16mm_Horizontal";2;"33k";;;
+5;"C3";"CP_Radial_D10.0mm_P5.00mm";1;"100uF 25V LOW ESR";;;
+6;"C0";"C_Disc_D4.3mm_W1.9mm_P5.00mm";1;"220nF";;;
+7;"J0";"IDC-Header_2x20_P2.54mm_Vertical";1;"Rpi_40Pin_F";;;
+8;"D1";"D_A-405_P10.16mm_Horizontal";1;"1N4007";;;
+9;"J1";"PinHeader_2x03_P2.54mm_Horizontal";1;"Control_seg:1";;;
+10;"J2";"PinHeader_2x03_P2.54mm_Horizontal";1;"Control_seg:2";;;
+11;"J3";"PinHeader_2x03_P2.54mm_Horizontal";1;"Control_seg:3";;;
+12;"J4";"conn_hdd_15-24-4441";1;"Molex_PSU_F";;;
+13;"J5";"USB_A_Stewart_SS-52100-001_Horizontal";1;"USB_A_F";;;
+14;"Q1";"TO-126-3_Vertical";1;"BD139-16";;;
+15;"R2";"R_Axial_DIN0207_L6.3mm_D2.5mm_P10.16mm_Horizontal";1;"430R";;;
