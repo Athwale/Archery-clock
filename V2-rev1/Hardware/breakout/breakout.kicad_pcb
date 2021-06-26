@@ -2,8 +2,8 @@
 
   (general
     (thickness 1.6)
-    (drawings 6)
-    (tracks 156)
+    (drawings 7)
+    (tracks 164)
     (zones 0)
     (modules 12)
     (nets 9)
@@ -650,6 +650,9 @@
     )
   )
 
+  (gr_text 1 (at 168 72) (layer B.Cu)
+    (effects (font (size 1.5 1.5) (thickness 0.3)) (justify mirror))
+  )
   (gr_text "33 mm" (at 126 74) (layer Eco2.User)
     (effects (font (size 1 1) (thickness 0.15)))
   )
@@ -817,5 +820,13 @@
   (segment (start 152.84 82.16) (end 152.5 82.5) (width 2) (layer B.Cu) (net 8))
   (segment (start 152.84 81.08) (end 152.84 82.16) (width 2) (layer B.Cu) (net 8))
   (segment (start 155.38 78.54) (end 152.84 81.08) (width 2) (layer B.Cu) (net 8))
+  (segment (start 140.46 62) (end 140.46 62.54) (width 2) (layer B.Cu) (net 8))
+  (segment (start 148.46 62) (end 148.46 62.54) (width 2) (layer B.Cu) (net 8))
+  (segment (start 157 62) (end 157 63) (width 2) (layer B.Cu) (net 8))
+  (segment (start 165 62) (end 165 63) (width 2) (layer B.Cu) (net 8))
+  (segment (start 173 62) (end 173 63) (width 2) (layer B.Cu) (net 8))
+  (segment (start 181 62) (end 181 63) (width 2) (layer B.Cu) (net 8))
+  (segment (start 148.46 62) (end 148.46 63.54) (width 2) (layer B.Cu) (net 8))
+  (segment (start 140.46 62) (end 140.46 63.54) (width 2) (layer B.Cu) (net 8))
 
 )
