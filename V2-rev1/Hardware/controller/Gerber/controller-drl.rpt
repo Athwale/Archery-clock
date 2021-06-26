@@ -1,0 +1,29 @@
+Drill report for /home/omejzlik/Kicad/Archery-clock/V2-rev1/Hardware/controller/controller.kicad_pcb
+Created on Sat 26 Jun 2021 10:41:19 AM CEST
+
+Copper Layer Stackup:
+    =============================================================
+    L1 :  F.Cu                      front
+    L2 :  B.Cu                      back
+
+
+Drill file 'controller-PTH.drl' contains
+    plated through holes:
+    =============================================================
+    T1  0.40mm  0.016"  (4 holes)
+    T2  0.80mm  0.031"  (74 holes)
+    T3  0.90mm  0.035"  (26 holes)
+    T4  1.00mm  0.039"  (41 holes)
+    T5  1.20mm  0.047"  (2 holes)
+    T6  1.80mm  0.071"  (4 holes)
+    T7  2.69mm  0.106"  (4 holes)
+
+    Total plated holes count 155
+
+
+Drill file 'controller-NPTH.drl' contains
+    unplated through holes:
+    =============================================================
+    T1  3.20mm  0.126"  (4 holes)
+
+    Total unplated holes count 4
