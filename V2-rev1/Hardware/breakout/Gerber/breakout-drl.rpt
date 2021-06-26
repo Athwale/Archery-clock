@@ -1,0 +1,26 @@
+Drill report for /home/omejzlik/Kicad/Archery-clock/V2-rev1/Hardware/breakout/breakout.kicad_pcb
+Created on Sat 26 Jun 2021 11:31:58 AM CEST
+
+Copper Layer Stackup:
+    =============================================================
+    L1 :  F.Cu                      front
+    L2 :  B.Cu                      back
+
+
+Drill file 'breakout-PTH.drl' contains
+    plated through holes:
+    =============================================================
+    T1  0.40mm  0.016"  (4 holes)
+    T2  1.00mm  0.039"  (10 holes)
+    T3  1.19mm  0.047"  (14 holes)
+    T4  2.69mm  0.106"  (2 holes)
+
+    Total plated holes count 30
+
+
+Drill file 'breakout-NPTH.drl' contains
+    unplated through holes:
+    =============================================================
+    T1  3.20mm  0.126"  (4 holes)
+
+    Total unplated holes count 4
