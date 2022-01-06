@@ -11,6 +11,10 @@ Current design which uses Raspberry pi 3 and is controlled over wi-fi using a sm
 The DXF and Gerber files are exported from copper side and must be mirror flipped by the manufacturer to produce correct boards, KiCad does not have this functionality built in. Drill files are included, but should be checked and adjusted according to your needs.  
 Check the position of pin 1 on the microcontroller (square pad in the design) for correct stencil placement.
 
+## Control software  
+The clock has a web based user interface that you can use from a phone or a computer. This software is being developed here:  
+https://github.com/zmej/arclock
+
 ### Viewing the designs
 Electronic designs were made in KiCad.
 
