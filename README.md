@@ -12,7 +12,8 @@ The DXF and Gerber files are exported from copper side and must be mirror flippe
 Check the position of pin 1 on the microcontroller (square pad in the design) for correct stencil placement.
 
 ## Control software  
-The clock has a web based user interface that you can use from a phone or a computer. This software is being developed here:  
+The clock has a web based user interface that you can use from a phone or a computer.  
+This software is being developed here:  
 https://github.com/zmej/arclock
 
 ### Viewing the designs
